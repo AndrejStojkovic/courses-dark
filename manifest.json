@@ -1,0 +1,28 @@
+{
+  "name": "FINKI Courses Dark Theme",
+  "description": "An extension that adds dark theme option to finki.courses.finki.mk",
+  "version": "1.0",
+  "manifest_version": 3,
+	"permissions": ["tabs", "activeTab", "scripting"],
+	"host_permissions": [
+    "*://courses.finki.ukim.mk/",
+    "*://courses.finki.ukim.mk/*"
+	],
+	"content_scripts": [
+    {
+      "matches": ["*://courses.finki.ukim.mk/", "*://courses.finki.ukim.mk/*"],
+      "js": ["main.js"],
+      "css": ["theme.css"]
+    }
+  ],
+	"action": {
+    "default_popup": "popup.html",
+		"default_icon": {
+      "16": "/images/icon_16.png",
+      "32": "/images/icon_32.png",
+      "48": "/images/icon_48.png",
+			"64": "/images/icon_64.png",
+      "128": "/images/icon_128.png"
+    }
+  }
+}

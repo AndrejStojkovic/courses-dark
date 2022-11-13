@@ -1,0 +1,7 @@
+:root {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+img, svg, footer {
+  filter: invert(1) hue-rotate(180deg);
+}
